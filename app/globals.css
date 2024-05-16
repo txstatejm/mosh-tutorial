@@ -18,10 +18,29 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  padding: 1rem;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 50%;
+    transform: scale(1);
+  }
+  50% {
+    border-radius: 25%;
+    transform: scale(1.1);
+  }
+  100% {
+    border-radius: 50%;
+    transform: scale(1);
+  }
+}
+
+.morph {
+  animation: morph 8s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+.border-black {
+  border: 5px solid black;
 }
