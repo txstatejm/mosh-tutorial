@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link legacyBehavior href="/">
-              <a className="text-xl font-bold">James Mosher Design</a>
+              <a className="text-xl font-bold text-gray-700 hover:text-gray-900">James Mosher Design</a>
             </Link>
           </div>
           <div className="hidden md:flex md:items-center md:space-x-4">
