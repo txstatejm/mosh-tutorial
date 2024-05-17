@@ -12,28 +12,29 @@ const Navbar = () => {
 
 
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-white shadow-md font-mono rounded">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            <Link legacyBehavior href="/">
-              <a className="text-xl font-bold text-gray-700 hover:text-gray-900">James Mosher Design</a>
+            <Link href="/" className="text-xl font-bold text-gray-700 hover:text-gray-900">
+              James Mosher Design
             </Link>
           </div>
           <div className="hidden md:flex md:items-center md:space-x-4">
-            <Link legacyBehavior href="/">
-              <a className="text-gray-700 hover:text-gray-900">Home</a>
+            <Link href="/" className="text-gray-700 hover:text-gray-900">
+              Home
             </Link>
-            <Link legacyBehavior href="/About">
-              <a className="text-gray-700 hover:text-gray-900">About</a>
+            <Link href="/About" className="text-gray-700 hover:text-gray-900">
+              About
             </Link>
-            <Link legacyBehavior href="/Portfolio">
-              <a className="text-gray-700 hover:text-gray-900">Portfolio</a>
+            <Link href="/Portfolio" className="text-gray-700 hover:text-gray-900">
+              Portfolio
             </Link>
-            <Link legacyBehavior href="/Contact">
-              <a className="text-gray-700 hover:text-gray-900">Contact</a>
+            <Link href="/Contact" className="text-gray-700 hover:text-gray-900">
+              Contact
             </Link>
           </div>
+
           <div className="flex items-center md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -57,17 +58,17 @@ const Navbar = () => {
 
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`} id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <Link legacyBehavior href="/">
-            <a onClick={handleLinkClick} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
+          <Link href="/" onClick={handleLinkClick} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+            Home
           </Link>
-          <Link legacyBehavior href="/About">
-            <a onClick={handleLinkClick} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
+          <Link href="/About" onClick={handleLinkClick} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+            About
           </Link>
-          <Link legacyBehavior href="/Portfolio">
-            <a onClick={handleLinkClick} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Portfolio</a>
+          <Link href="/Portfolio" onClick={handleLinkClick} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+              Portfolio
           </Link>
-          <Link legacyBehavior href="/Contact">
-            <a onClick={handleLinkClick}className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</a>
+          <Link href="/Contact" onClick={handleLinkClick} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+              Contact
           </Link>
         </div>
       </div>
