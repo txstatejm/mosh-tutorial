@@ -1,8 +1,19 @@
 const Contact = () => {
   return (
-    <div>
-      <h1>Contact Me!</h1>
-    </div>
+    <section id="contact" className="section text-white py-10">
+      <div className="container mx-auto px-4">
+        <div className="section-content text-center pt-10">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Me!</h2>
+          <p className="text-lg md:text-xl">
+            James Mosher
+            <br/>
+            555-555-5555
+            <br/>
+            jamesmosher@design.com
+          </p>
+        </div>
+      </div>
+    </section>
   )
 }
 
